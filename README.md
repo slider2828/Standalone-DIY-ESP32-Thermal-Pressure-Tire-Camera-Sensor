@@ -7,22 +7,36 @@ This project provides real-time multi-zone tread temperature analysis for track 
 Full how-to walkthrough: https://youtu.be/BBLoeDo5oM8
 
 ---
-**Arduino IDE Cores and Libraries Used**
-This is what I installed on my Windows 11 PC and the Cores and Arduino Libraries that I needed to get it running
-arduino-cores.txt
-arduino-libraries.txt
+## Arduino IDE Setup
 
-**Arduino IDE setting	Value for WaveShare Communication**
-Serial Monitor BAUD 115200 baud
-Board	ESP32S3 Dev Module
-CPU Frequency	240MHz (WiFi)
-Flash Size	16MB (128Mb)
-PSRAM	OPI PSRAM
-USB CDC On Boot	Enabled
-USB Mode	Hardware CDC and JTAG
-Upload Mode	UART0 / Hardware CDC
-Upload Speed	921600
-Port	Select the COM port for the Waveshare board
+### Arduino IDE Cores and Libraries Used
+
+The following files contain the Arduino cores and libraries installed on my Windows 11 PC for this project:
+
+- `arduino-cores.txt`
+- `arduino-libraries.txt`
+
+These files document the versions used in the working development environment.
+
+### Arduino IDE Settings for Waveshare ESP32-S3 Touch LCD 4.3
+
+| Setting | Value |
+|---|---|
+| Serial Monitor Baud | 115200 |
+| Board | ESP32S3 Dev Module |
+| CPU Frequency | 240MHz (WiFi) |
+| Flash Size | 16MB (128Mb) |
+| PSRAM | OPI PSRAM |
+| USB CDC On Boot | Enabled |
+| USB Mode | Hardware CDC and JTAG |
+| Upload Mode | UART0 / Hardware CDC |
+| Upload Speed | 921600 |
+| Port | Select the COM port assigned to the Waveshare board |
+
+### Serial Monitor
+
+The firmware uses:
+Serial.begin(115200);
 
 **System Overview**
 The system consists of three main components:
